@@ -12,6 +12,13 @@ import Trading from "@/components/Trading";
 import ZakatCalculator from "@/components/ZakatCalculator";
 import Footer from "@/components/Footer";
 
+import Gold from "@/components/Gold";
+import Silver from "@/components/Silver";
+import Screening from "@/components/Screening";
+import Blog from "@/components/Blog";
+import Contact from "@/components/Contact";
+import ShariahTeam from "@/components/ShariahTeam";
+
 export default function HomePage() {
   const [watchlist, setWatchlist] = useState([]);
 
@@ -41,8 +48,16 @@ export default function HomePage() {
         setWatchlist={setWatchlist}
       />
 
-      <Trading/>
+      <Gold />
+      <Silver />
+      <SIP />
+      <Trading />
+      <Screening />
       <ZakatCalculator />
+      <ShariahTeam />
+      <Blog />
+      <Contact />
+
       <Footer />
     </>
   );

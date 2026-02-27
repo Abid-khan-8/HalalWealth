@@ -1,22 +1,40 @@
-// src/components/Hero.jsx
+"use client";
+
+import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
+
 export default function Hero() {
+  const router = useRouter();
+  
   return (
-    <section className="pt-32 pb-24 bg-gradient-to-br from-emerald-50 via-teal-50 to-emerald-100">
-      <div className="max-w-7xl mx-auto px-4 text-center">
-        <h1 className="text-6xl font-bold text-emerald-900 mb-6">
-          Halal Wealth Building
-          <br />
-          Without Compromise
-        </h1>
+    <section className="pt-32 pb-24 text-center bg-gradient-to-br from-emerald-900 via-emerald-800 to-black text-white">
+      <motion.h1
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="text-6xl font-bold mb-6"
+      >
+        Build Halal Wealth
+        <br />
+        The Modern Way
+      </motion.h1>
 
-        <p className="text-2xl text-gray-800 max-w-4xl mx-auto mb-10">
-          Stocks • SIPs • Trading • Zakat — All Shariah-Compliant
-        </p>
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.4 }}
+        className="text-xl mb-8 text-emerald-100"
+      >
+        Stocks • SIP • Trading • Zakat • Gold
+      </motion.p>
 
-        <button className="bg-emerald-700 text-white px-10 py-5 rounded-xl text-xl font-semibold">
-          Start Free Screening →
-        </button>
-      </div>
+      <motion.button
+        onClick={() => { router.push("/signin") }}
+        whileHover={{ scale: 1.05 }}
+        className="bg-white text-emerald-900 px-8 py-4 rounded-xl font-bold"
+      >
+        Start Investing →
+      </motion.button>
     </section>
   );
 }

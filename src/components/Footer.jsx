@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-400 py-10 mt-20">
+    <footer className="bg-gray-900 text-gray-400 py-10">
       <div className="max-w-7xl mx-auto px-4 text-center space-y-4">
-        <p>© 2026 TayyibWealth. Not financial or Shariah advice.</p>
+        <p>© 2026 HalalWealth. Not financial or Shariah advice.</p>
 
         <div className="flex justify-center gap-6">
           <a

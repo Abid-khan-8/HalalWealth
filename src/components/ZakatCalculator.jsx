@@ -32,7 +32,7 @@ export default function ZakatCalculator() {
     netZakatable >= NISAB ? (netZakatable * 0.025).toFixed(2) : 0;
 
   return (
-    <section id="zakat" className="py-20 bg-white">
+    <section id="zakat" className="py-20 bg-white text-black">
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-5xl font-bold text-emerald-900 mb-6 text-center">
           Zakat Calculator

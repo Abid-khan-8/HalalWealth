@@ -7,7 +7,7 @@ export default function Watchlist({ watchlist, setWatchlist }) {
   };
 
   return (
-    <section id="watchlist" className="py-20 bg-gray-100">
+    <section id="watchlist" className="py-20 bg-gray-100 text-black">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <h2 className="text-5xl font-bold mb-8 text-emerald-900">
           Your Watchlist
